@@ -1,0 +1,50 @@
+
+.filters-sidebar {
+  position: sticky;
+  top: 80px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+
+.filters-sidebar h5 {
+  color: #2d5f3f;
+  border-bottom: 2px solid #2d5f3f;
+  padding-bottom: 0.5rem;
+}
+
+.filters-sidebar .form-check-input:checked {
+  background-color: #2d5f3f;
+  border-color: #2d5f3f;
+}
+
+.filters-sidebar .form-check-label {
+  cursor: pointer;
+  user-select: none;
+}
+  
+.filters-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.filters-sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.filters-sidebar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.filters-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media (max-width: 768px) {
+  .filters-sidebar {
+    position: relative;
+    top: 0;
+    max-height: none;
+    margin-bottom: 1rem;
+  }
+}
